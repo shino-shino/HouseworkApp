@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="viU-Qt-cEX">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--リンクする-->
+        <scene sceneID="n4D-ZY-h3J">
+            <objects>
+                <viewController id="7vb-KM-jlD" customClass="SignInFamilyViewController" customModule="HouseworkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4H-ko-G9O">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="合言葉" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsy-Sn-Txf">
+                                <rect key="frame" x="20" y="158" width="388" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Pu-LR-eDI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVD-eR-Pcd">
+                                <rect key="frame" x="20" y="223" width="388" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6CQ-ch-oBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="家族をリンクする"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="家族をリンクする">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInFamily" destination="7vb-KM-jlD" eventType="touchUpInside" id="lhS-6F-rf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-eP-Jby">
+                                <rect key="frame" x="30" y="403" width="368" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EIv-Um-Dwo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="新規家族登録へ"/>
+                                <buttonConfiguration key="configuration" style="gray" title="新規家族登録へ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="LdZ-2Z-cjy" kind="show" id="wou-ob-cuJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家族リンクをお持ちでない方はこちら" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnw-6j-SSI">
+                                <rect key="frame" x="20" y="368" width="388" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nIE-qt-QP9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="家族ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pwe-2W-eAe">
+                                <rect key="frame" x="20" y="108" width="388" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dzn-5s-Kq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqG-d5-pE1">
+                                <rect key="frame" x="40" y="293" width="348" height="25"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0Um-ZI-TNo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="合言葉をお忘れの方はこちら"/>
+                                <buttonConfiguration key="configuration" style="gray" title="家族リンクとは？">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="whatIsAikotoba" destination="7vb-KM-jlD" eventType="touchUpInside" id="Fn6-4m-Lxz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J1A-m0-VJJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qnw-6j-SSI" firstAttribute="top" secondItem="BqG-d5-pE1" secondAttribute="bottom" constant="50" id="3nW-3g-99p"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="Qnw-6j-SSI" secondAttribute="trailing" constant="20" id="4vI-D5-YGu"/>
+                            <constraint firstItem="gVD-eR-Pcd" firstAttribute="top" secondItem="Jsy-Sn-Txf" secondAttribute="bottom" constant="25" id="5Pc-82-RAI"/>
+                            <constraint firstItem="Jsy-Sn-Txf" firstAttribute="top" secondItem="Pwe-2W-eAe" secondAttribute="bottom" constant="10" id="ALZ-gj-J98"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="Pwe-2W-eAe" secondAttribute="trailing" constant="20" id="IbP-kT-IKT"/>
+                            <constraint firstItem="cQY-eP-Jby" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="30" id="RIK-Im-l1w"/>
+                            <constraint firstItem="Qnw-6j-SSI" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="20" id="VQK-OQ-lci"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="cQY-eP-Jby" secondAttribute="trailing" constant="30" id="Vgy-Sy-TUx"/>
+                            <constraint firstItem="Pwe-2W-eAe" firstAttribute="top" secondItem="J1A-m0-VJJ" secondAttribute="top" constant="20" id="WnA-kk-CE5"/>
+                            <constraint firstItem="Jsy-Sn-Txf" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="20" id="XGw-aC-ARJ"/>
+                            <constraint firstItem="Pwe-2W-eAe" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="20" id="XvC-iQ-GpA"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="BqG-d5-pE1" secondAttribute="trailing" constant="40" id="geo-XT-jrD"/>
+                            <constraint firstItem="cQY-eP-Jby" firstAttribute="top" secondItem="Qnw-6j-SSI" secondAttribute="bottom" constant="15" id="gjj-dg-Soc"/>
+                            <constraint firstItem="BqG-d5-pE1" firstAttribute="top" secondItem="gVD-eR-Pcd" secondAttribute="bottom" constant="20" id="hy8-aG-Vhi"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="gVD-eR-Pcd" secondAttribute="trailing" constant="20" id="kOG-Re-a9g"/>
+                            <constraint firstItem="J1A-m0-VJJ" firstAttribute="trailing" secondItem="Jsy-Sn-Txf" secondAttribute="trailing" constant="20" id="nre-sY-qLk"/>
+                            <constraint firstItem="gVD-eR-Pcd" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="20" id="qwC-Yb-fnO"/>
+                            <constraint firstItem="BqG-d5-pE1" firstAttribute="leading" secondItem="J1A-m0-VJJ" secondAttribute="leading" constant="40" id="re3-51-nvJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="リンクする" id="ij0-bH-hBB"/>
+                    <connections>
+                        <outlet property="aikotobaTextField" destination="Jsy-Sn-Txf" id="jMd-KN-tTg"/>
+                        <outlet property="familyNameTextField" destination="Pwe-2W-eAe" id="ooZ-7z-qqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJy-ZX-GxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866" y="94"/>
+        </scene>
+        <!--家族登録-->
+        <scene sceneID="Fuw-8u-Vhb">
+            <objects>
+                <viewController id="LdZ-2Z-cjy" customClass="SignUpFamilyViewController" customModule="HouseworkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DzW-Lq-3lw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="家族ID(4文字以上)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-EC-vwA">
+                                <rect key="frame" x="20" y="108" width="388" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EcE-IG-Zhc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="合言葉(変更不可)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyX-5M-eq1">
+                                <rect key="frame" x="20" y="173" width="388" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JRH-AV-52t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="合言葉(確認)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-hd-o7c">
+                                <rect key="frame" x="20" y="223" width="388" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8pk-5y-JEF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-iy-com">
+                                <rect key="frame" x="20" y="288" width="388" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JuI-IP-Joq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="家族をリンクを作成する"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="家族をリンクを作成する">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpFammily" destination="LdZ-2Z-cjy" eventType="touchUpInside" id="5kg-cw-vvi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LRo-dg-0nK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RcU-iy-com" firstAttribute="top" secondItem="5bG-hd-o7c" secondAttribute="bottom" constant="30" id="Sk8-df-R0h"/>
+                            <constraint firstItem="LRo-dg-0nK" firstAttribute="trailing" secondItem="NyX-5M-eq1" secondAttribute="trailing" constant="20" id="WiN-H7-zbU"/>
+                            <constraint firstItem="LRo-dg-0nK" firstAttribute="trailing" secondItem="5bG-hd-o7c" secondAttribute="trailing" constant="20" id="XoC-1W-Kfp"/>
+                            <constraint firstItem="LRo-dg-0nK" firstAttribute="trailing" secondItem="Ucz-EC-vwA" secondAttribute="trailing" constant="20" id="YcU-CU-Mss"/>
+                            <constraint firstItem="5bG-hd-o7c" firstAttribute="leading" secondItem="LRo-dg-0nK" secondAttribute="leading" constant="20" id="d1d-0a-qOH"/>
+                            <constraint firstItem="LRo-dg-0nK" firstAttribute="trailing" secondItem="RcU-iy-com" secondAttribute="trailing" constant="20" id="fA4-rH-U9t"/>
+                            <constraint firstItem="5bG-hd-o7c" firstAttribute="top" secondItem="NyX-5M-eq1" secondAttribute="bottom" constant="15" id="k4b-Db-Rql"/>
+                            <constraint firstItem="Ucz-EC-vwA" firstAttribute="top" secondItem="LRo-dg-0nK" secondAttribute="top" constant="20" id="muX-6H-Q7f"/>
+                            <constraint firstItem="NyX-5M-eq1" firstAttribute="top" secondItem="Ucz-EC-vwA" secondAttribute="bottom" constant="30" id="oq5-sp-m63"/>
+                            <constraint firstItem="NyX-5M-eq1" firstAttribute="leading" secondItem="LRo-dg-0nK" secondAttribute="leading" constant="20" id="qER-fk-g7c"/>
+                            <constraint firstItem="RcU-iy-com" firstAttribute="leading" secondItem="LRo-dg-0nK" secondAttribute="leading" constant="20" id="uGe-WL-ehj"/>
+                            <constraint firstItem="Ucz-EC-vwA" firstAttribute="leading" secondItem="LRo-dg-0nK" secondAttribute="leading" constant="20" id="whH-Yv-8jR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="家族登録" id="p47-yJ-tkg"/>
+                    <connections>
+                        <outlet property="aikotobaTextField" destination="NyX-5M-eq1" id="hff-cB-KA9"/>
+                        <outlet property="confirmTextField" destination="5bG-hd-o7c" id="wop-vX-VDU"/>
+                        <outlet property="familyNameTextField" destination="Ucz-EC-vwA" id="lrW-YD-Qrw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROU-bI-Z1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="94"/>
+        </scene>
+        <!--ニックネーム設定-->
+        <scene sceneID="pR3-Wm-pf5">
+            <objects>
+                <viewController id="LUf-If-gH3" customClass="userSettingViewController" customModule="HouseworkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgj-2U-tE6">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ニックネーム(変更可)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdA-vk-V6G">
+                                <rect key="frame" x="20" y="138" width="388" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="U5t-Le-MKN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G93-bj-COx">
+                                <rect key="frame" x="200" y="228" width="208" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vTX-wu-NqZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="新規家族登録へ"/>
+                                <buttonConfiguration key="configuration" style="gray" title="OK">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="okButton" destination="LUf-If-gH3" eventType="touchUpInside" id="Yv4-iz-CK6"/>
+                                    <segue destination="7vb-KM-jlD" kind="show" id="M99-sw-qEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rT8-m4-tej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G93-bj-COx" firstAttribute="leading" secondItem="fgj-2U-tE6" secondAttribute="leading" constant="200" id="0X1-DV-jmx"/>
+                            <constraint firstItem="rT8-m4-tej" firstAttribute="trailing" secondItem="G93-bj-COx" secondAttribute="trailing" constant="20" id="1Bt-KI-Hdf"/>
+                            <constraint firstItem="IdA-vk-V6G" firstAttribute="leading" secondItem="rT8-m4-tej" secondAttribute="leading" constant="20" id="EpO-7M-vWg"/>
+                            <constraint firstItem="rT8-m4-tej" firstAttribute="trailing" secondItem="IdA-vk-V6G" secondAttribute="trailing" constant="20" id="JRm-9g-Jxb"/>
+                            <constraint firstItem="G93-bj-COx" firstAttribute="top" secondItem="IdA-vk-V6G" secondAttribute="bottom" constant="30" id="SfG-ut-0XG"/>
+                            <constraint firstItem="IdA-vk-V6G" firstAttribute="top" secondItem="rT8-m4-tej" secondAttribute="top" constant="50" id="pqP-48-WUL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ニックネーム設定" id="qgp-8K-1NL"/>
+                    <connections>
+                        <outlet property="nicknameTextField" destination="IdA-vk-V6G" id="AdU-6f-Upr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cj7-Mq-uLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="axQ-Pv-2nE">
+            <objects>
+                <navigationController storyboardIdentifier="RootFamilyNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="viU-Qt-cEX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JCt-mF-vS2">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LUf-If-gH3" kind="relationship" relationship="rootViewController" id="2m8-te-boL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJe-Cw-8iX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-205" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

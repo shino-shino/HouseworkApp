@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E0880A249473C355A20C6B /* Pods_HouseworkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14BEB1768F25D2D9E739EA9 /* Pods_HouseworkApp.framework */; };
+		B405D54B26E5D8A000EA0C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D54A26E5D8A000EA0C33 /* AppDelegate.swift */; };
+		B405D54D26E5D8A000EA0C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D54C26E5D8A000EA0C33 /* SceneDelegate.swift */; };
+		B405D54F26E5D8A000EA0C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D54E26E5D8A000EA0C33 /* ViewController.swift */; };
+		B405D55226E5D8A000EA0C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B405D55026E5D8A000EA0C33 /* Main.storyboard */; };
+		B405D55726E5D8A200EA0C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B405D55526E5D8A200EA0C33 /* LaunchScreen.storyboard */; };
+		B405D56126E5D96000EA0C33 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56026E5D96000EA0C33 /* SignInViewController.swift */; };
+		B405D56326E5D97300EA0C33 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56226E5D97300EA0C33 /* SignUpViewController.swift */; };
+		B405D56526E5DBF800EA0C33 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B405D56426E5DBF800EA0C33 /* SignIn.storyboard */; };
+		B405D56726E5DDEE00EA0C33 /* SignInFamily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B405D56626E5DDEE00EA0C33 /* SignInFamily.storyboard */; };
+		B405D56926E5E02600EA0C33 /* SignInFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56826E5E02600EA0C33 /* SignInFamilyViewController.swift */; };
+		B405D56B26E5E04900EA0C33 /* SignUpFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56A26E5E04900EA0C33 /* SignUpFamilyViewController.swift */; };
+		B405D56D26E8E4D100EA0C33 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56C26E8E4D100EA0C33 /* Family.swift */; };
+		B405D56F26E8E68F00EA0C33 /* Housework.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D56E26E8E68F00EA0C33 /* Housework.swift */; };
+		B405D57326E8E7B300EA0C33 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405D57226E8E7B300EA0C33 /* PostData.swift */; };
+		B4154DC227034E2E00C4F6E3 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4154DC127034E2E00C4F6E3 /* AppColor.swift */; };
+		B4154DC627034F9700C4F6E3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4154DC527034F9700C4F6E3 /* TabBarViewController.swift */; };
+		B4154DC82703F06000C4F6E3 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4154DC72703F06000C4F6E3 /* ForgetPasswordViewController.swift */; };
+		B4154DF5270886F000C4F6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B405D55326E5D8A200EA0C33 /* Assets.xcassets */; };
+		B437BF102700915C0074832D /* FamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437BF0E2700915C0074832D /* FamilyTableViewCell.swift */; };
+		B437BF112700915C0074832D /* FamilyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B437BF0F2700915C0074832D /* FamilyTableViewCell.xib */; };
+		B437BF15270093B60074832D /* FamilyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437BF14270093B60074832D /* FamilyInfoViewController.swift */; };
+		B460F763270D7406006B4AC1 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460F762270D7406006B4AC1 /* ChartViewController.swift */; };
+		B47580DA2712E89A00BD8CB0 /* ChartDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47580D92712E89A00BD8CB0 /* ChartDetailViewController.swift */; };
+		B476E34D276318CA008BB3B5 /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E347276318C9008BB3B5 /* NotoSansJP-Light.otf */; };
+		B476E34E276318CA008BB3B5 /* NotoSansJP-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E348276318C9008BB3B5 /* NotoSansJP-Black.otf */; };
+		B476E34F276318CA008BB3B5 /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E349276318C9008BB3B5 /* NotoSansJP-Bold.otf */; };
+		B476E350276318CA008BB3B5 /* NotoSansJP-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E34A276318C9008BB3B5 /* NotoSansJP-Thin.otf */; };
+		B476E351276318CA008BB3B5 /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E34B276318C9008BB3B5 /* NotoSansJP-Regular.otf */; };
+		B476E352276318CA008BB3B5 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B476E34C276318CA008BB3B5 /* NotoSansJP-Medium.otf */; };
+		B476E35627644BAA008BB3B5 /* userSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476E35527644BAA008BB3B5 /* userSettingViewController.swift */; };
+		B476E35827645377008BB3B5 /* SignUpMailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476E35727645377008BB3B5 /* SignUpMailAddressViewController.swift */; };
+		B492031926EAEDAB00B37674 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492031826EAEDAB00B37674 /* PostViewController.swift */; };
+		B492031B26EAEDD700B37674 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492031A26EAEDD700B37674 /* SettingViewController.swift */; };
+		B492031D26EB150800B37674 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492031C26EB150800B37674 /* AccountInfoViewController.swift */; };
+		B4B7290926ECE74F00D1B9B0 /* HouseworkInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7290826ECE74F00D1B9B0 /* HouseworkInfoViewController.swift */; };
+		B4B7290C26ECE77500D1B9B0 /* HouseworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7290A26ECE77500D1B9B0 /* HouseworkTableViewCell.swift */; };
+		B4B7290D26ECE77500D1B9B0 /* HouseworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4B7290B26ECE77500D1B9B0 /* HouseworkTableViewCell.xib */; };
+		B4B7291126EDBAFA00D1B9B0 /* HouseworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7291026EDBAFA00D1B9B0 /* HouseworkDetailViewController.swift */; };
+		B4B7291326F0674A00D1B9B0 /* AddHouseworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7291226F0674A00D1B9B0 /* AddHouseworkViewController.swift */; };
+		B4B7291526F2194400D1B9B0 /* RegisterHouseworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7291426F2194400D1B9B0 /* RegisterHouseworkViewController.swift */; };
+		B4C3476627625A3900780123 /* when_starting.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C3476527625A3900780123 /* when_starting.png */; };
+		B4C3476827625B1700780123 /* Starting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C3476727625B1700780123 /* Starting.storyboard */; };
+		B4D15D892702A3E20065B83E /* PostDataDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D15D882702A3E20065B83E /* PostDataDetailViewController.swift */; };
+		B4D15D8C2702A4000065B83E /* PostDataDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D15D8A2702A4000065B83E /* PostDataDetailTableViewCell.swift */; };
+		B4D15D8D2702A4000065B83E /* PostDataDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D15D8B2702A4000065B83E /* PostDataDetailTableViewCell.xib */; };
+		B4E7914A270896FD00E485EB /* EditAcountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E79149270896FD00E485EB /* EditAcountInfoViewController.swift */; };
+		B4F00F2026F8627D003316CE /* PostDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F00F1E26F8627D003316CE /* PostDataTableViewCell.swift */; };
+		B4F00F2126F8627D003316CE /* PostDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F00F1F26F8627D003316CE /* PostDataTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F4763372E9DE54C5D8A1148 /* Pods-HouseworkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseworkApp.debug.xcconfig"; path = "Target Support Files/Pods-HouseworkApp/Pods-HouseworkApp.debug.xcconfig"; sourceTree = "<group>"; };
+		79522DDB14D99EDD35FC89AB /* Pods-HouseworkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseworkApp.release.xcconfig"; path = "Target Support Files/Pods-HouseworkApp/Pods-HouseworkApp.release.xcconfig"; sourceTree = "<group>"; };
+		A14BEB1768F25D2D9E739EA9 /* Pods_HouseworkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseworkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B405D54726E5D8A000EA0C33 /* HouseworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B405D54A26E5D8A000EA0C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B405D54C26E5D8A000EA0C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B405D54E26E5D8A000EA0C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B405D55126E5D8A000EA0C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B405D55326E5D8A200EA0C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B405D55626E5D8A200EA0C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B405D55826E5D8A200EA0C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B405D56026E5D96000EA0C33 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B405D56226E5D97300EA0C33 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B405D56426E5DBF800EA0C33 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		B405D56626E5DDEE00EA0C33 /* SignInFamily.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInFamily.storyboard; sourceTree = "<group>"; };
+		B405D56826E5E02600EA0C33 /* SignInFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFamilyViewController.swift; sourceTree = "<group>"; };
+		B405D56A26E5E04900EA0C33 /* SignUpFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFamilyViewController.swift; sourceTree = "<group>"; };
+		B405D56C26E8E4D100EA0C33 /* Family.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		B405D56E26E8E68F00EA0C33 /* Housework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Housework.swift; sourceTree = "<group>"; };
+		B405D57226E8E7B300EA0C33 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		B4154DC127034E2E00C4F6E3 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		B4154DC527034F9700C4F6E3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B4154DC72703F06000C4F6E3 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		B437BF0E2700915C0074832D /* FamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTableViewCell.swift; sourceTree = "<group>"; };
+		B437BF0F2700915C0074832D /* FamilyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilyTableViewCell.xib; sourceTree = "<group>"; };
+		B437BF14270093B60074832D /* FamilyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyInfoViewController.swift; sourceTree = "<group>"; };
+		B460F762270D7406006B4AC1 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		B47580D92712E89A00BD8CB0 /* ChartDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDetailViewController.swift; sourceTree = "<group>"; };
+		B476E347276318C9008BB3B5 /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
+		B476E348276318C9008BB3B5 /* NotoSansJP-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Black.otf"; sourceTree = "<group>"; };
+		B476E349276318C9008BB3B5 /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
+		B476E34A276318C9008BB3B5 /* NotoSansJP-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Thin.otf"; sourceTree = "<group>"; };
+		B476E34B276318C9008BB3B5 /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
+		B476E34C276318CA008BB3B5 /* NotoSansJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Medium.otf"; sourceTree = "<group>"; };
+		B476E35527644BAA008BB3B5 /* userSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettingViewController.swift; sourceTree = "<group>"; };
+		B476E35727645377008BB3B5 /* SignUpMailAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMailAddressViewController.swift; sourceTree = "<group>"; };
+		B492031826EAEDAB00B37674 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B492031A26EAEDD700B37674 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B492031C26EB150800B37674 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
+		B4B7290826ECE74F00D1B9B0 /* HouseworkInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseworkInfoViewController.swift; sourceTree = "<group>"; };
+		B4B7290A26ECE77500D1B9B0 /* HouseworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseworkTableViewCell.swift; sourceTree = "<group>"; };
+		B4B7290B26ECE77500D1B9B0 /* HouseworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseworkTableViewCell.xib; sourceTree = "<group>"; };
+		B4B7291026EDBAFA00D1B9B0 /* HouseworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseworkDetailViewController.swift; sourceTree = "<group>"; };
+		B4B7291226F0674A00D1B9B0 /* AddHouseworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseworkViewController.swift; sourceTree = "<group>"; };
+		B4B7291426F2194400D1B9B0 /* RegisterHouseworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHouseworkViewController.swift; sourceTree = "<group>"; };
+		B4C3476527625A3900780123 /* when_starting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = when_starting.png; sourceTree = "<group>"; };
+		B4C3476727625B1700780123 /* Starting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Starting.storyboard; sourceTree = "<group>"; };
+		B4D15D882702A3E20065B83E /* PostDataDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataDetailViewController.swift; sourceTree = "<group>"; };
+		B4D15D8A2702A4000065B83E /* PostDataDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B4D15D8B2702A4000065B83E /* PostDataDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDataDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B4E79149270896FD00E485EB /* EditAcountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAcountInfoViewController.swift; sourceTree = "<group>"; };
+		B4F00F1E26F8627D003316CE /* PostDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataTableViewCell.swift; sourceTree = "<group>"; };
+		B4F00F1F26F8627D003316CE /* PostDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDataTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B405D54426E5D8A000EA0C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E0880A249473C355A20C6B /* Pods_HouseworkApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3A73EC8ABDE2DAB9ECED7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4763372E9DE54C5D8A1148 /* Pods-HouseworkApp.debug.xcconfig */,
+				79522DDB14D99EDD35FC89AB /* Pods-HouseworkApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B405D53E26E5D8A000EA0C33 = {
+			isa = PBXGroup;
+			children = (
+				B405D54926E5D8A000EA0C33 /* HouseworkApp */,
+				B405D54826E5D8A000EA0C33 /* Products */,
+				2F3A73EC8ABDE2DAB9ECED7E /* Pods */,
+				DD0AC48DFBAAC106CE625DA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B405D54826E5D8A000EA0C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B405D54726E5D8A000EA0C33 /* HouseworkApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B405D54926E5D8A000EA0C33 /* HouseworkApp */ = {
+			isa = PBXGroup;
+			children = (
+				B476E346276317EE008BB3B5 /* fonts */,
+				B4C3476527625A3900780123 /* when_starting.png */,
+				B405D54A26E5D8A000EA0C33 /* AppDelegate.swift */,
+				B405D54C26E5D8A000EA0C33 /* SceneDelegate.swift */,
+				B405D54E26E5D8A000EA0C33 /* ViewController.swift */,
+				B405D56C26E8E4D100EA0C33 /* Family.swift */,
+				B405D57226E8E7B300EA0C33 /* PostData.swift */,
+				B405D56E26E8E68F00EA0C33 /* Housework.swift */,
+				B4154DC127034E2E00C4F6E3 /* AppColor.swift */,
+				B4154DC527034F9700C4F6E3 /* TabBarViewController.swift */,
+				B492031826EAEDAB00B37674 /* PostViewController.swift */,
+				B4B7291426F2194400D1B9B0 /* RegisterHouseworkViewController.swift */,
+				B492031A26EAEDD700B37674 /* SettingViewController.swift */,
+				B492031C26EB150800B37674 /* AccountInfoViewController.swift */,
+				B4E79149270896FD00E485EB /* EditAcountInfoViewController.swift */,
+				B4F00F1E26F8627D003316CE /* PostDataTableViewCell.swift */,
+				B4F00F1F26F8627D003316CE /* PostDataTableViewCell.xib */,
+				B4D15D882702A3E20065B83E /* PostDataDetailViewController.swift */,
+				B4D15D8A2702A4000065B83E /* PostDataDetailTableViewCell.swift */,
+				B4D15D8B2702A4000065B83E /* PostDataDetailTableViewCell.xib */,
+				B4B7290826ECE74F00D1B9B0 /* HouseworkInfoViewController.swift */,
+				B4B7290A26ECE77500D1B9B0 /* HouseworkTableViewCell.swift */,
+				B4B7290B26ECE77500D1B9B0 /* HouseworkTableViewCell.xib */,
+				B4B7291026EDBAFA00D1B9B0 /* HouseworkDetailViewController.swift */,
+				B437BF14270093B60074832D /* FamilyInfoViewController.swift */,
+				B437BF0E2700915C0074832D /* FamilyTableViewCell.swift */,
+				B437BF0F2700915C0074832D /* FamilyTableViewCell.xib */,
+				B4B7291226F0674A00D1B9B0 /* AddHouseworkViewController.swift */,
+				B47580DB2712EC1B00BD8CB0 /* Chart */,
+				B47580DC2712EC6000BD8CB0 /* SignIn */,
+				B4C3476727625B1700780123 /* Starting.storyboard */,
+				B405D55026E5D8A000EA0C33 /* Main.storyboard */,
+				B405D56426E5DBF800EA0C33 /* SignIn.storyboard */,
+				B405D56626E5DDEE00EA0C33 /* SignInFamily.storyboard */,
+				B405D55326E5D8A200EA0C33 /* Assets.xcassets */,
+				B405D55526E5D8A200EA0C33 /* LaunchScreen.storyboard */,
+				B405D55826E5D8A200EA0C33 /* Info.plist */,
+			);
+			path = HouseworkApp;
+			sourceTree = "<group>";
+		};
+		B47580DB2712EC1B00BD8CB0 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				B460F762270D7406006B4AC1 /* ChartViewController.swift */,
+				B47580D92712E89A00BD8CB0 /* ChartDetailViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		B47580DC2712EC6000BD8CB0 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B405D56026E5D96000EA0C33 /* SignInViewController.swift */,
+				B476E35727645377008BB3B5 /* SignUpMailAddressViewController.swift */,
+				B405D56226E5D97300EA0C33 /* SignUpViewController.swift */,
+				B4154DC72703F06000C4F6E3 /* ForgetPasswordViewController.swift */,
+				B476E35527644BAA008BB3B5 /* userSettingViewController.swift */,
+				B405D56826E5E02600EA0C33 /* SignInFamilyViewController.swift */,
+				B405D56A26E5E04900EA0C33 /* SignUpFamilyViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		B476E346276317EE008BB3B5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B476E348276318C9008BB3B5 /* NotoSansJP-Black.otf */,
+				B476E349276318C9008BB3B5 /* NotoSansJP-Bold.otf */,
+				B476E347276318C9008BB3B5 /* NotoSansJP-Light.otf */,
+				B476E34C276318CA008BB3B5 /* NotoSansJP-Medium.otf */,
+				B476E34B276318C9008BB3B5 /* NotoSansJP-Regular.otf */,
+				B476E34A276318C9008BB3B5 /* NotoSansJP-Thin.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		DD0AC48DFBAAC106CE625DA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14BEB1768F25D2D9E739EA9 /* Pods_HouseworkApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B405D54626E5D8A000EA0C33 /* HouseworkApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B405D55B26E5D8A200EA0C33 /* Build configuration list for PBXNativeTarget "HouseworkApp" */;
+			buildPhases = (
+				80B974AF53272F420D995805 /* [CP] Check Pods Manifest.lock */,
+				B405D54326E5D8A000EA0C33 /* Sources */,
+				B405D54426E5D8A000EA0C33 /* Frameworks */,
+				B405D54526E5D8A000EA0C33 /* Resources */,
+				91029CAD5D19BED24CE04824 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseworkApp;
+			productName = HouseworkApp;
+			productReference = B405D54726E5D8A000EA0C33 /* HouseworkApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B405D53F26E5D8A000EA0C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B405D54626E5D8A000EA0C33 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = B405D54226E5D8A000EA0C33 /* Build configuration list for PBXProject "HouseworkApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B405D53E26E5D8A000EA0C33;
+			productRefGroup = B405D54826E5D8A000EA0C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B405D54626E5D8A000EA0C33 /* HouseworkApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B405D54526E5D8A000EA0C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B476E352276318CA008BB3B5 /* NotoSansJP-Medium.otf in Resources */,
+				B405D55726E5D8A200EA0C33 /* LaunchScreen.storyboard in Resources */,
+				B476E34E276318CA008BB3B5 /* NotoSansJP-Black.otf in Resources */,
+				B4B7290D26ECE77500D1B9B0 /* HouseworkTableViewCell.xib in Resources */,
+				B476E34F276318CA008BB3B5 /* NotoSansJP-Bold.otf in Resources */,
+				B405D56526E5DBF800EA0C33 /* SignIn.storyboard in Resources */,
+				B476E34D276318CA008BB3B5 /* NotoSansJP-Light.otf in Resources */,
+				B4F00F2126F8627D003316CE /* PostDataTableViewCell.xib in Resources */,
+				B405D56726E5DDEE00EA0C33 /* SignInFamily.storyboard in Resources */,
+				B437BF112700915C0074832D /* FamilyTableViewCell.xib in Resources */,
+				B4C3476627625A3900780123 /* when_starting.png in Resources */,
+				B4154DF5270886F000C4F6E3 /* Assets.xcassets in Resources */,
+				B476E351276318CA008BB3B5 /* NotoSansJP-Regular.otf in Resources */,
+				B405D55226E5D8A000EA0C33 /* Main.storyboard in Resources */,
+				B4C3476827625B1700780123 /* Starting.storyboard in Resources */,
+				B476E350276318CA008BB3B5 /* NotoSansJP-Thin.otf in Resources */,
+				B4D15D8D2702A4000065B83E /* PostDataDetailTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80B974AF53272F420D995805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseworkApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91029CAD5D19BED24CE04824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseworkApp/Pods-HouseworkApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseworkApp/Pods-HouseworkApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HouseworkApp/Pods-HouseworkApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B405D54326E5D8A000EA0C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B437BF15270093B60074832D /* FamilyInfoViewController.swift in Sources */,
+				B460F763270D7406006B4AC1 /* ChartViewController.swift in Sources */,
+				B4E7914A270896FD00E485EB /* EditAcountInfoViewController.swift in Sources */,
+				B405D56126E5D96000EA0C33 /* SignInViewController.swift in Sources */,
+				B4B7291526F2194400D1B9B0 /* RegisterHouseworkViewController.swift in Sources */,
+				B405D56D26E8E4D100EA0C33 /* Family.swift in Sources */,
+				B4B7290926ECE74F00D1B9B0 /* HouseworkInfoViewController.swift in Sources */,
+				B405D54F26E5D8A000EA0C33 /* ViewController.swift in Sources */,
+				B405D56926E5E02600EA0C33 /* SignInFamilyViewController.swift in Sources */,
+				B4B7291326F0674A00D1B9B0 /* AddHouseworkViewController.swift in Sources */,
+				B492031D26EB150800B37674 /* AccountInfoViewController.swift in Sources */,
+				B4F00F2026F8627D003316CE /* PostDataTableViewCell.swift in Sources */,
+				B476E35627644BAA008BB3B5 /* userSettingViewController.swift in Sources */,
+				B405D56B26E5E04900EA0C33 /* SignUpFamilyViewController.swift in Sources */,
+				B4D15D8C2702A4000065B83E /* PostDataDetailTableViewCell.swift in Sources */,
+				B405D54B26E5D8A000EA0C33 /* AppDelegate.swift in Sources */,
+				B4154DC627034F9700C4F6E3 /* TabBarViewController.swift in Sources */,
+				B47580DA2712E89A00BD8CB0 /* ChartDetailViewController.swift in Sources */,
+				B405D56F26E8E68F00EA0C33 /* Housework.swift in Sources */,
+				B405D54D26E5D8A000EA0C33 /* SceneDelegate.swift in Sources */,
+				B4B7290C26ECE77500D1B9B0 /* HouseworkTableViewCell.swift in Sources */,
+				B405D56326E5D97300EA0C33 /* SignUpViewController.swift in Sources */,
+				B4154DC227034E2E00C4F6E3 /* AppColor.swift in Sources */,
+				B405D57326E8E7B300EA0C33 /* PostData.swift in Sources */,
+				B476E35827645377008BB3B5 /* SignUpMailAddressViewController.swift in Sources */,
+				B4154DC82703F06000C4F6E3 /* ForgetPasswordViewController.swift in Sources */,
+				B4D15D892702A3E20065B83E /* PostDataDetailViewController.swift in Sources */,
+				B492031926EAEDAB00B37674 /* PostViewController.swift in Sources */,
+				B492031B26EAEDD700B37674 /* SettingViewController.swift in Sources */,
+				B437BF102700915C0074832D /* FamilyTableViewCell.swift in Sources */,
+				B4B7291126EDBAFA00D1B9B0 /* HouseworkDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B405D55026E5D8A000EA0C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B405D55126E5D8A000EA0C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B405D55526E5D8A200EA0C33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B405D55626E5D8A200EA0C33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B405D55926E5D8A200EA0C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B405D55A26E5D8A200EA0C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B405D55C26E5D8A200EA0C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4763372E9DE54C5D8A1148 /* Pods-HouseworkApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HouseworkApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinotai.HouseworkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B405D55D26E5D8A200EA0C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79522DDB14D99EDD35FC89AB /* Pods-HouseworkApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HouseworkApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinotai.HouseworkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B405D54226E5D8A000EA0C33 /* Build configuration list for PBXProject "HouseworkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B405D55926E5D8A200EA0C33 /* Debug */,
+				B405D55A26E5D8A200EA0C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B405D55B26E5D8A200EA0C33 /* Build configuration list for PBXNativeTarget "HouseworkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B405D55C26E5D8A200EA0C33 /* Debug */,
+				B405D55D26E5D8A200EA0C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B405D53F26E5D8A000EA0C33 /* Project object */;
+}
