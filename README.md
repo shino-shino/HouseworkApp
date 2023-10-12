@@ -4,3 +4,7 @@
 
 ## デモ動画
 ハウスジョブ：https://www.youtube.com/watch?v=dgHKb2oJMCA
+
+## アプリ概要
+### 機能
+### 注意点
